@@ -1,0 +1,18 @@
+<form [formGroup]="myDeleteForm">
+  <div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Id" formControlName="id" />
+    </mat-form-field>
+    <br />
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="onDeleteClick()"
+      style="margin-left: 100px"
+    >
+      Delete
+    </button>
+    <br />
+    <mat-card>{{ deleteMsg }}</mat-card>
+  </div>
+</form>

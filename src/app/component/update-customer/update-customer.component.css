@@ -1,0 +1,6 @@
+table {
+  width: 100%;
+}
+.example-container .mat-form-field + .mat-form-field inputText {
+  margin-left: 100px;
+}

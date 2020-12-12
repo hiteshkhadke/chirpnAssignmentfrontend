@@ -1,0 +1,27 @@
+<div class="card-container">
+  <a class="card" (click)="assignComponent('add')" href="#">
+    <span>Add Customer</span>
+  </a>
+
+  <a class="card" (click)="assignComponent('update')" href="#">
+    <span>Update Customer</span>
+  </a>
+
+  <a class="card" (click)="assignComponent('delete')" href="#">
+    <span>Delete Customer</span>
+  </a>
+</div>
+
+<div>
+  <ng-container *ngComponentOutlet="dynamicComponent"></ng-container>
+</div>
+<br />
+<button
+  [disabled]="disableGoBackBtn()"
+  mat-raised-button
+  color="warn"
+  (click)="onGoBackClick()"
+  style="margin-left: 300px; align-items: center"
+>
+  Go back to search
+</button>
